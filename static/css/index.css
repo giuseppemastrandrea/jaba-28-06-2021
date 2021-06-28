@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+
+body{
+    width: 50%;
+}
+
+header{
+    /* La proprietà width può essere espressa in molti modi. */
+    /* width: 500px; es. in termini assoluti -> grandezza in px */
+    /* width: 100vw; es. in termini assoluti -> grandezza in percentuale della viewport
+     100vw -> 100% della larghezza della viewport
+     70vw  -> 70% della larghezza della viewport
+     10vw  -> 10% della larghezza della viewport
+     */
+    width: 50%; /* es. in termini assoluti -> grandezza in percentuale relativa all'elemento parent */
+
+    /* La proprietà height può essere espressa in molti modi. */
+    /* height: 500px; es. in termini assoluti -> grandezza in px */
+    /* height: 100vh; es. in termini assoluti -> grandezza in percentuale della viewport
+     100vh -> 100% della altezza della viewport
+     70vh  -> 70% della altezza della viewport
+     10vh  -> 10% della altezza della viewport
+     */
+    height: 100vh;
+    /*  esistono anche le proprietà min-width, min-height, max-width, max-height  */
+}
+
+.myArticle{
+    background-color: dodgerblue;
+    border: 10px solid #ff00ff;
+    padding: 30px;
+    margin: 50px 0
+}
+
+#subscribe{
+    border: 5px solid #00ffff;
+    padding: 100px 0;
+    /* background-image: url(../images/miaimmagine.jpg); */
+    background-image: url(https://images.pexels.com/photos/8388522/pexels-photo-8388522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: 100%;
+}
+
+body p{
+    /* Regole */
+    color: darkblue;
+}
+
+.thick-red-border{
+    /* In questa classe specifichiamo un bordo spesso 8px a tratto continuo di colore rosso */
+    border: 8px solid rgb(255,0,0);
+}
+
+
+.different-padding-class{
+    /* la proprietà padding può essere usata specificando un valore per ogni lato del box. si parte dal lato superiore
+    e si va in senso orario */
+    padding: 40px 30px 20px 10px;
+    /* questo è equivalente a:
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    */
+}
+
+.y-padding{
+    padding: 40px 0;
+    /* questo è equivalente a:
+    padding-top: 40px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    padding-left: 0;
+    */
+}
+
+.x-padding{
+    padding: 0 40px;
+    /* questo è equivalente a:
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    */
+}
+
+.xy-padding{
+    padding: 40px;
+    /* questo è equivalente a:
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    */
+}
+
+.different-margin-class{
+    margin: 20px 40px;
+    /* questo è equivalente a:
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    */
+}

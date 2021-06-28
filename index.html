@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+      Stile inline -> si usa l'attributo "style" con gli elementi che vogliamo stilizzare. N.B. IN QUESTO MODO VENGONO
+      SOVRASCRITTI TUTTI GLI STILI MESSI CON ALTRI MODI
+    -->
+
+    <!--
+      Foglio di stile interno: scrivo i miei stili all'interno di un tag <style> che tipicamente si trova nell'head
+    -->
+    <style>
+      header nav a {
+          font-size: 30px;
+          font-family: cursive;
+      }
+
+      #main.section p{
+          color: mediumaquamarine;
+      }
+
+    </style>
+
+    <style>
+
+    </style>
+
+    <!-- Foglio di stile esterno -->
+    <link href="static/css/index.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="#">
+          <img src="//via.placeholder.com/240x120" />
+        </a>
+      </h1>
+      <nav class="different-margin-class">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contatti</a></li>
+          <li><a href="#">Chi siamo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p class="paragraph thick-red-border">
+      CIAO CIAO CIAAAAA
+    </p>
+    <section id="main" class="section">
+      <article class="myArticle" id="articolo">
+        <h2 class="sectionTitle">
+          Titolo dell'articolo
+        </h2>
+
+        <p id="paragrafoArticolo" class="paragraph" style="text-decoration: line-through;color:rgb(255,0,255);">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <ul>
+          <li><a href="#">List Item #1</a></li>
+          <li><a href="#">List Item #2</a></li>
+          <li><a href="#">List Item #3</a></li>
+        </ul>
+      </article>
+    </section>
+    <section id="subscribe" class="section">
+      <h2 class="sectionTitle">
+        Iscriviti alla newsletter
+      </h2>
+      <form>
+        <div class="row">
+          <div class="fieldWrapper">
+            <div class="label">
+              <label for="nome">Nome: </label>
+            </div>
+            <div class="field">
+              <input type="text" name="first_name" id="nome" placeholder="Inserisci il nome" />
+            </div>
+            <div class="msg">
+              <span>Campo obbligatorio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="fieldWrapper">
+            <div class="label">
+              <label for="email">Email: </label>
+            </div>
+            <div class="field">
+              <input type="text" name="email" id="email" placeholder="Inserisci la tua mail" />
+            </div>
+            <div class="msg">
+              <span>Campo obbligatorio</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <h4 class="font-xyz yellow-color">Support the guardian</h4>
+
+
+    <footer class="red-color">
+      © 2021 - Newspaper Copyright
+    </footer>
+  </body>
+</html>
