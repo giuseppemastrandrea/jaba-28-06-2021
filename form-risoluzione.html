@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form di registrazione</title>
+</head>
+<body>
+	<header>
+		<h1>Form di registrazione</h1>
+	</header>
+	<section>
+		<form action="." method="post"> <!-- Siccome devo inviare dati personali è meglio usare il metodo post -->
+			
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<label for="nome">Nome: </label>
+					</div>
+					<div class="field">
+						<input type="text" name="first_name" id="nome" placeholder="Inserisci il nome" />
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<label for="cognome">Cognome: </label>
+					</div>
+					<div class="field">
+						<input type="text" name="last_name" id="cognome" placeholder="Inserisci il cognome" />
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<span>Età:</span>
+					</div>
+					<div class="field">
+						<label for="id-1">< 18</label>
+						<input type="radio" value="0" name="age" id="id-1" />
+
+						<label for="id-2">19-26</label>
+						<input type="radio" value="1" name="age" id="id-2" >
+
+
+						<label for="id-3">27-99</label>
+						<input type="radio" value="2" name="age" id="id-3" >
+
+
+
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<label for="address">Indirizzo completo: </label>
+					</div>
+					<div class="field">
+						<textarea name="address" id="address" placeholder="Via, civico, CAP"></textarea>
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<label for="regione">Regione: </label>
+					</div>
+					<div class="field">
+						<select name="regione" id="regione">
+							<option disabled selected>Scegli una regione</option>
+							<option value="pu">Puglia</option>
+							<option value="ba">Basilicata</option>
+							<option value="ca">Campania</option>
+						</select>
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<label for="provincia">Provincia: </label>
+					</div>
+					<div class="field">
+						<select name="provincia" id="provincia">
+							<option disabled selected>Scegli una provincia</option>
+							<option value="ba">Bari</option>
+							<option value="le">Lecce</option>
+							<option value="fg">Foggia</option>
+						</select>
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<span>Sesso:</span>
+					</div>
+					<div class="field">
+						<label for="id-4">Maschio</label>
+						<input type="radio" value="0" name="sex" id="id-4" />
+
+						<label for="id-5">Femmina</label>
+						<input type="radio" value="1" name="sex" id="id-5" >
+
+
+						<label for="id-6">Altro</label>
+						<input type="radio" value="2" name="sex" id="id-6" >
+
+
+
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<span>Interessi:</span>
+					</div>
+					<div class="field">
+						<div>
+							<label for="id-7">Politica</label>
+							<input type="checkbox" value="0" name="interessi" id="id-7" />
+						</div>
+
+						<div>
+							<label for="id-8">Cronaca</label>
+							<input type="checkbox" value="1" name="interessi" id="id-8" >
+						</div>
+
+						<div>
+							<label for="id-9">Sport</label>
+							<input type="checkbox" value="2" name="interessi" id="id-9" >
+						</div>
+
+
+
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<label for="password">Password: </label>
+					</div>
+					<div class="field">
+						<input type="password" name="password" id="password" placeholder="Inserisci una password" />
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="fieldWrapper">
+					<div class="label">
+						<label for="confirm-password">Conferma Password: </label>
+					</div>
+					<div class="field">
+						<input type="password" name="confirm-password" id="confirm-password" placeholder="Conferma la password inserita" />
+					</div>
+					<div class="msg">
+						<span>Campo obbligatorio</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<button type="reset">Cancella</button>
+				<button type="submit">Invia</button>
+			</div>
+
+		</form>
+	</section>
+</body>
+</html>
