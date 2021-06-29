@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <!-- <link rel="stylesheet" href="path_to_my_file.css" /> foglio di stile esterno -->
+
+  <!-- foglio di stile interno -->
+  <style>
+      * { /* l'asterisco è il selettore wildcard e significa "tutti gli elementi HTML" */
+          margin: 0
+      }
+
+      ol{
+          margin-top: 40px;
+      }
+
+      .box{
+          /*
+          max-width: 1200px;
+          width: 100%;
+          */
+          width: 1200px;
+          /*
+          Usando auto per le proprietà margin-left e margin-right automaticamente il box si centra
+          */
+          margin-left: auto;
+          margin-right: auto;
+          background: darkturquoise;
+          opacity: 0.5;
+      }
+
+      .box h5{
+          text-align: center;
+      }
+
+      .sectionTitle{
+          font-family: Roboto, sans-serif;
+          color: yellow;
+          text-align: center;
+          margin-bottom: 25px;
+          margin-top: 25px;
+      }
+
+      section{
+          padding: 50px 0; /* padding-top e padding-bottom: 50px, padding-left e padding-right 0*/
+      }
+
+      .editorialContent { /* specificity 010 */
+          font-size: 18px;
+          line-height: 1.5;
+      }
+
+
+      main section div div{ /* 004 */
+          font-size: 28px;
+          line-height: 2; /* -> equivale a 27px */
+      }
+
+      body{
+          min-height: 100vh;
+          background-image: url(https://images.pexels.com/photos/7419661/pexels-photo-7419661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+          /* background-image: url(static/img/myImage.jpeg); */
+          background-size: contain; /* metti l'immagine per intero */
+          /* background-size: cover; /* Copri tutto lo spazio dell'elemento anche tagliando l'img */
+          background-repeat: no-repeat; /* Non ripetere l'immagine */
+          background-position: center; /* Posiziona l'immagine al centro dell'elemento */
+      }
+
+  </style>
+
+</head>
+<body>
+  <header class="box">
+    <h1>
+      Il mio titolo principale
+    </h1>
+    <h5>
+      Titolo resettato
+    </h5>
+    <nav>
+      <ol>
+        <li>Test 1</li>
+        <li>Test 2</li>
+        <li>Test 3</li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="box">
+        <h2 class="sectionTitle">
+          Titolo di sezione
+        </h2>
+
+        <p>
+          Questo paragrafo sta prima del contenuto editoriale.
+        </p>
+
+        <div class="editorialContent">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <ul>
+            <li>Editorial list 1</li>
+            <li>Editorial list 2</li>
+            <li>Editorial list 3</li>
+          </ul>
+
+         <!--  <img src="https://images.pexels.com/photos/7419661/pexels-photo-7419661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Rose rosse" /> -->
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Copyright my company 2021
+  </footer>
+</body>
+</html>

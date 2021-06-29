@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      *{
+        margin: 0;
+      }
+      .flexbox{
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          background: magenta;
+      }
+      .flexbox:nth-child(2n){
+          background: chartreuse;
+      }
+      .flexItem{
+          background: coral;
+      }
+
+      .justify-center{ justify-content: center; }
+      .justify-end{ justify-content: flex-end; }
+      .justify-start{ justify-content: flex-start; }
+      .justify-between {justify-content: space-between;}
+
+      .align-items-start{ align-items: flex-start; }
+      .align-items-end{ align-items: flex-end; }
+      .align-items-center{ align-items: center; }
+      .align-items-stretch{ align-items: stretch; }
+
+      .direction-row{ flex-direction: row }
+      .direction-column { flex-direction: column }
+
+      .withPadding{
+          padding: 50px 25px;
+      }
+
+  </style>
+</head>
+<body>
+  <div class="flexbox direction-row justify-start align-items-start ">
+    <div class="flexItem"> Contenuto flex item 1 </div>
+    <div class="flexItem"> Contenuto flex item 2 </div>
+    <div class="flexItem"> Contenuto flex item 3 </div>
+  </div>
+
+  <div class="flexbox direction-column justify-start align-items-start ">
+    <div class="flexItem"> Contenuto flex item 1 </div>
+    <div class="flexItem"> Contenuto flex item 2 </div>
+    <div class="flexItem"> Contenuto flex item 3 </div>
+  </div>
+
+  <div class="flexbox direction-row justify-end align-items-center ">
+    <div class="flexItem"> Contenuto flex item 1 </div>
+    <div class="flexItem"> Contenuto flex item 2 </div>
+    <div class="flexItem"> Contenuto flex item 3 </div>
+  </div>
+
+  <div class="flexbox direction-column justify-end align-items-center ">
+    <div class="flexItem"> Contenuto flex item 1 </div>
+    <div class="flexItem"> Contenuto flex item 2 </div>
+    <div class="flexItem"> Contenuto flex item 3 </div>
+  </div>
+
+  <div class="flexbox direction-row justify-center align-items-center ">
+    <div class="flexItem"> Contenuto flex item 1 </div>
+    <div class="flexItem"> Contenuto flex item 2 </div>
+    <div class="flexItem"> Contenuto flex item 3 </div>
+  </div>
+
+  <div class="flexbox direction-row justify-center align-items-stretch ">
+    <div class="flexItem"> Contenuto flex item 1 </div>
+    <div class="flexItem" style="display: flex;align-items: center"> Contenuto flex item 2 </div>
+    <div class="flexItem"> Contenuto flex item 3 </div>
+  </div>
+
+  <div class="flexbox direction-row justify-center align-items-center ">
+    <div class="flexItem withPadding"> Contenuto flex item 1 </div>
+  </div>
+
+
+</body>
+</html>
